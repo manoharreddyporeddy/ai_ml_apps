@@ -331,7 +331,7 @@
     "4.155.17.56": "linux"
   },
   "remoteHub.commitDirectlyWarning": "off",
-  "remove-empty-lines.allowedNumberOfEmptyLines": 1,
+  "remove-empty-lines.allowedNumberOfEmptyLines": 2,
   "runOnSave.commands": [
     {
       "async": false,
