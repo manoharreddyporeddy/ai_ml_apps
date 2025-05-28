@@ -2,20 +2,20 @@ import os
 import openai
 from openai import OpenAI
 
+MODEL_NAME = "gpt-4.1-mini"  # gpt-4.1-mini/gpt-4o-mini works, gpt-4.1/gpt-3.5-turbo does not work
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
 client = OpenAI(api_key=OPENAI_API_KEY)
-
-model_name = "gpt-4.1-mini"  # "gpt-4.1-mini", "gpt-4o-mini" works, You exceeded your current quota ("gpt-4.1", "gpt-3.5-turbo")
-user_message = "Please tell me a joke."
-
-print(f"\nModel: {model_name}")
-print(f"Sending Message: {user_message}")
+print(f"\nModel: {MODEL_NAME}")
 
 try:
+    USER_MESSAGE = "Please tell me a joke."
+    print(f"Sending Message: {USER_MESSAGE}")
+
     completion = client.chat.completions.create(
-        model=model_name,
+        model=MODEL_NAME,
         store=True,
-        messages=[{"role": "user", "content": user_message}],
+        messages=[{"role": "user", "content": USER_MESSAGE}],
     )
     print(f"Response: {completion.choices[0].message.content}")
 
