@@ -188,7 +188,6 @@
   ],
   "chat.commandCenter.enabled": false,
   "chat.editing.alwaysSaveWithGeneratedChanges": true,
-  "clangd.path": "c:\\Users\\manoharp\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\12.0.1\\clangd_12.0.1\\bin\\clangd.exe",
   "cmake.configureOnOpen": true,
   // "editor.codeActionsOnSave": ["code-runner.executorMap"],
   "code-runner.executorMap": {
@@ -416,5 +415,7 @@
   "workbench.iconTheme": "vscode-icons",
   // "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
 }
